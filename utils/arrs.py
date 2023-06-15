@@ -14,6 +14,9 @@ def get(array, index, default=None):
     if index < 0:
         return default
 
+    if not array:
+        return 'Array is empty'
+
     return array[index]
 
 
